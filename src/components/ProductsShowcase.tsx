@@ -1,12 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "swiper/css";
-import "../app/globals.css";
 
 export function ProductsShowcase() {
     const products = [
@@ -44,17 +41,15 @@ export function ProductsShowcase() {
                     Nuestros Productos Destacados
                 </h2>
                 <Swiper
-                    modules={[Autoplay, Pagination, Navigation]}
+                    modules={[Autoplay]}
                     spaceBetween={20}
                     slidesPerView={1}
-                    pagination={{ clickable: true }}
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
                     loop={true}
                     breakpoints={{
                         680: { slidesPerView: 1 },
                         1024: { slidesPerView: 3 },
                     }}
-                    navigation={true}
                     className="mx-10"
                 >
                     {products.map((product) => (

@@ -21,6 +21,7 @@ export const metadata: Metadata = {
         title: "D' Moda Accesorios | Moda y Estilo",
         description:
             "Encuentra accesorios y ropa con estilo en nuestra tienda. Calidad y tendencia al mejor precio.",
+        url: "https://dmoda-accesorios-demo.vercel.app/",
         siteName: "D' Moda Accesorios",
         type: "website",
     },
